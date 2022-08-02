@@ -7,7 +7,11 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://ontheroad.philippov.info/</loc>
-  <lastmod>2022-08-02T09:51:00Z</lastmod>
+  <lastmod>2022-08-02T11:00:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://ontheroad.philippov.info/2021/</loc>
+  <lastmod>2022-08-02T11:00:00Z</lastmod>
  </url>
  <url>
   <loc>https://ontheroad.philippov.info/2022/</loc>
@@ -15,7 +19,7 @@
  </url>
  <url>
   <loc>https://ontheroad.philippov.info/archive.html</loc>
-  <lastmod>2022-08-02T10:52:00Z</lastmod>
+  <lastmod>2022-08-02T11:00:00Z</lastmod>
  </url>
  <url>
   <loc>https://ontheroad.philippov.info/categories/</loc>
@@ -40,6 +44,10 @@
  <url>
   <loc>https://ontheroad.philippov.info/listings/</loc>
   <lastmod>2022-08-02T09:33:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://ontheroad.philippov.info/posts/nashi-pokatushki/</loc>
+  <lastmod>2022-08-02T11:00:00Z</lastmod>
  </url>
  <url>
   <loc>https://ontheroad.philippov.info/posts/summer-trip-2022.rst/</loc>
