@@ -25,7 +25,7 @@ SITE_URL = "https://ontheroad.philippov.info/"
 # If not set, defaults to SITE_URL
 # BASE_URL = "https://ontheroad.philippov.info/"
 BLOG_EMAIL = "alks.philippov@gmail.com"
-BLOG_DESCRIPTION = "Our trips."  # (translatable)
+BLOG_DESCRIPTION = "On the Road Again"  # (translatable)
 
 # Nikola is multilingual!
 #
@@ -94,7 +94,7 @@ BLOG_DESCRIPTION = "Our trips."  # (translatable)
 # in the default language will be shown instead.
 
 # What is the default language?
-DEFAULT_LANG = "en"
+DEFAULT_LANG = "ru"
 
 # What other languages do you have?
 # The format is {"translationcode" : "path/to/translation" }
@@ -142,9 +142,9 @@ TRANSLATIONS_PATTERN = '{path}.{lang}.{ext}'
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-        ("/archive.html", "Archive"),
-        ("/categories/", "Tags"),
-        ("/rss.xml", "RSS feed"),
+#        ("/archive.html", "Archive"),
+#        ("/categories/", "Tags"),
+#        ("/rss.xml", "RSS feed"),
     ),
 }
 
@@ -801,7 +801,7 @@ GALLERIES_DEFAULT_THUMBNAIL = None
 
 # If set to True, EXIF data will be copied when an image is thumbnailed or
 # resized. (See also EXIF_WHITELIST)
-# PRESERVE_EXIF_DATA = False
+PRESERVE_EXIF_DATA = True
 
 # If you have enabled PRESERVE_EXIF_DATA, this option lets you choose EXIF
 # fields you want to keep in images. (See also PRESERVE_EXIF_DATA)
@@ -838,6 +838,14 @@ GALLERIES_DEFAULT_THUMBNAIL = None
 # If set to True, any ICC profile will be copied when an image is thumbnailed or
 # resized.
 # PRESERVE_ICC_PROFILES = False
+
+EXIF_WHITELIST = {
+    "0th": ["Orientation", "ImageWidth", "ImageLength", "Model", "Software", "DateTimeOriginal", "Copyright", "UserComment"],
+    "GPS": "*"
+}
+
+PRESERVE_ICC_PROFILES = True
+
 
 # Folders containing images to be used in normal posts or pages.
 # IMAGE_FOLDERS is a dictionary of the form {"source": "destination"},
@@ -940,7 +948,7 @@ IMAGE_FOLDERS = {'images': 'images'}
 # )
 
 # Show teasers (instead of full posts) in indexes? Defaults to False.
-# INDEX_TEASERS = False
+INDEX_TEASERS = True
 
 # HTML fragments with the Read more... links.
 # The following tags exist and are replaced for you:
@@ -1193,7 +1201,7 @@ MARKDOWN_EXTENSIONS = ['markdown.extensions.fenced_code', 'markdown.extensions.c
 
 # Only include teasers in Atom and RSS feeds. Disabling include the full
 # content. Defaults to True.
-# FEED_TEASERS = True
+FEED_TEASERS = False
 
 # Strip HTML from Atom and RSS feed summaries and content. Defaults to False.
 # FEED_PLAIN = False
@@ -1269,6 +1277,20 @@ MARKDOWN_EXTENSIONS = ['markdown.extensions.fenced_code', 'markdown.extensions.c
 # (translatable)
 # BODY_END = ""
 
+BODY_END = """ 
+ 
+<script> 
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ 
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), 
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55779902-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+"""
+
 # The possibility to extract metadata from the filename by using a
 # regular expression.
 # To make it work you need to name parts of your regular expression.
@@ -1286,7 +1308,7 @@ MARKDOWN_EXTENSIONS = ['markdown.extensions.fenced_code', 'markdown.extensions.c
 # FILE_METADATA_REGEXP = None
 
 # Should titles fetched from file metadata be unslugified (made prettier?)
-# FILE_METADATA_UNSLUGIFY_TITLES = True
+FILE_METADATA_UNSLUGIFY_TITLES = True
 
 # If enabled, extract metadata from docinfo fields in reST documents.
 # If your text files start with a level 1 heading, it will be treated as the
