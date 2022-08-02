@@ -6,15 +6,27 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
+  <loc>https://ontheroad.philippov.info/categories/auto.xml</loc>
+  <lastmod>2022-08-02T10:52:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://ontheroad.philippov.info/categories/chechnia.xml</loc>
+  <lastmod>2022-08-02T10:52:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://ontheroad.philippov.info/categories/dagestan.xml</loc>
+  <lastmod>2022-08-02T10:52:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://ontheroad.philippov.info/galleries/rss.xml</loc>
-  <lastmod>2022-08-02T09:33:00Z</lastmod>
+  <lastmod>2022-08-02T10:52:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://ontheroad.philippov.info/rss.xml</loc>
-  <lastmod>2022-08-02T09:51:00Z</lastmod>
+  <lastmod>2022-08-02T10:52:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://ontheroad.philippov.info/sitemap.xml</loc>
-  <lastmod>2022-08-02T09:51:00Z</lastmod>
+  <lastmod>2022-08-02T10:52:00Z</lastmod>
  </sitemap>
 </sitemapindex>
